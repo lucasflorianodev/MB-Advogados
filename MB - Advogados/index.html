@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="shortcut icon" href="/imgs/miguel_barbosa-128.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./imgs/miguel_barbosa-128.png" type="image/x-icon">
     <title>MB - Advogados</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
                 <nav class="nav-bar">
 
                     <div class="logo"><a href="index.html">
-                        <a href=""><img class="logo" src="/imgs/logo-miguel.jpeg" alt="logo"></a>
+                        <a href=""><img class="logo" src="./imgs/logo-miguel.jpeg" alt="logo"></a>
                     </div>
 
                     <div class="nav-list">
@@ -26,14 +26,14 @@
                             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#area-de-atuacao">Área de Atuação</a></li>
                             <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                             <li class="nav-item"><a class="nav-link" href="#nossos-artigos">Nossos Artigos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                         </ul>
                     </div>
 
                     <div class="mobile-menu-icon">
 
-                        <button onclick="menuShow()"><img class="icon" src="/imgs/menu_white_36dp.svg.svg"></button>
+                        <button onclick="menuShow()"><img class="icon" src="./imgs/menu_white_36dp.svg.svg"></button>
     
                     </div>
                 </nav>
@@ -41,11 +41,11 @@
                 <div class="mobile-menu">
 
                     <ul>
-                        <li class="nav-item"><a class="nav-link" href="/assets/index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./assets/index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#area-de-atuacao">Área de Atuação</a></li>
                         <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
                         <li class="nav-item"><a class="nav-link" href="#nossos-artigos">Nossos Artigos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                     </ul>
 
                 </div>
@@ -68,7 +68,7 @@
                     <section class="card civil">
                         
                         <div class="icon">
-                            <img src="/imgs/balança.png" alt="Direito Civil">
+                            <img src="./imgs/balança.png" alt="Direito Civil">
                         </div>
 
                         <div class="content_cards">
@@ -76,14 +76,30 @@
                         <span>lorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</span>        
                         </div>
                         
-                        <button href="#areadeatuacao">Saiba Mais</button>
+                        <button class="read_button" id="direito-civil">Saiba Mais</button>
+
+                        <div class="modal" tabindex="-1" role="dialog" id="myModal">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Título do modal</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Texto do corpo do modal, é aqui.</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="close" data-dismiss="modal">Fechar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
         
                     </section>
         
                     <section class="card familia">
                         
                         <div class="icon">
-                            <img src="/imgs/familia-removebg-preview.png" alt="Direito Familiar">
+                            <img src="./imgs/familia-removebg-preview.png" alt="Direito Familiar">
                         </div>
 
                         <div class="content_cards">
@@ -98,7 +114,7 @@
                     <section class="card penal">
         
                         <div class="icon">
-                            <img src="/imgs/martelo.png" alt="Direito Penal">
+                            <img src="./imgs/martelo.png" alt="Direito Penal">
                         </div>
 
                         <div class="content_cards">
@@ -114,7 +130,7 @@
             <section class="card imobiliario">
  
                 <div class="icon">
-                   <img src="/imgs/home.png" alt="Direito Penal">
+                   <img src="./imgs/home.png" alt="Direito Penal">
                 </div>
 
                 <div class="content_cards">
@@ -128,7 +144,7 @@
            <section class="card empresarial">
  
                 <div class="icon">
-                    <img src="/imgs/balança.png" alt="Direito Penal">
+                    <img src="./imgs/balança.png" alt="Direito Penal">
                 </div>
 
                 <div class="content_cards">
@@ -143,7 +159,7 @@
             <section class="card tributario">
  
                 <div class="icon">
-                    <img src="/imgs/tributario.png" alt="Direito Penal">
+                    <img src="./imgs/tributario.png" alt="Direito Penal">
                 </div>
 
                 <div class="content_cards">
@@ -163,5 +179,6 @@
     </main>
     </div>
 </body>
-<script src="/assets/script.js"></script>
+<script src="./assets/script.js"></script>
+<script src="./assets/modal.js"></script>
 </html>
