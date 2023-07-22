@@ -11,6 +11,7 @@ html, body {
     width: 100%;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    scroll-behavior: smooth;
 }
 
 /* Vitrine do site */
@@ -24,6 +25,8 @@ main {
 }
 nav, ul, li {
     list-style-type: none;
+    gap: 2rem;
+    
 }
 header {
     background-color: #1c1f40;
@@ -140,8 +143,13 @@ header {
     font-weight: 300;
 }
 
-/* Conteúdo da página */
+/* Cards 1 & 2 */
 
+.area-de-atuacao {
+    height: 875px;
+    margin-top: 88px;
+
+}
 main.cards, main.cards2 {
     display: flex;
     justify-content: center;
@@ -168,9 +176,9 @@ main.cards section.card h3, main.cards2 section.card h3 {
 
 main.cards section.card span, main.cards2 section.card span  {
     font-weight: 300;
-    max-width: 240px;
+    max-width: 300px;
     font-size: 80%;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
 }
 
 main.cards section.card, main.cards2 section.card {
@@ -181,7 +189,7 @@ main.cards section.card, main.cards2 section.card {
     background: white;
     padding: 1rem 1.5rem;
     border-radius: 8px;
-    max-height: 468px;
+    max-height: 400px;
     margin-left: 32px;
 }
 
@@ -189,10 +197,20 @@ main.cards section.card button, main.cards2 section.card button {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     border-radius: 32px;
-    border: 0;
+    border: none;
     cursor: pointer;
-    font-size: 80%;
-    font-weight: 500;
+    font-size: 90%;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+
+main.cards.active .content_cards {
+    height: 500px;
+}
+
+main.cards.active .content_cards::before {
+    visibility: hidden;
 }
 
 main.cards section.card.civil button {
@@ -277,4 +295,29 @@ main.cards2 section.card.tributario {
     main.cards2 section.card button {
         font-size: 70%;
     }
+}
+
+.content_cards {
+    height: 215px;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+    text-align:justify;
+}
+
+.content_cards h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+    position: relative;
+}
+
+.content_cards::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #fff);
 }
