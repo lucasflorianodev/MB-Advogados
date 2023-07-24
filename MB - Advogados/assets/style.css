@@ -322,9 +322,11 @@ main.cards2 section.card.tributario {
     background: linear-gradient(transparent, #fff);
 }
 
-.button-close-modal {
+.button-close-modal, 
+.button-close-modal-2,
+.button-close-modal-3 {
     padding: 0.6rem 1.2rem;
-    background-color: #888;
+    background-color: #ffffff;
     color: #000000;
     border: none;
     border-radius: 0.25rem;
@@ -334,22 +336,30 @@ main.cards2 section.card.tributario {
     transition: 0.4s;
 }
 
-#open-modal {
-    background-color: #1c1f40e0;
+#open-modal, 
+#open-modal-2,
+#open-modal-3 {
+    background-color: #293842;
     color: white;
 }
 
-.button-close-modal:hover {
+.button-close-modal:hover,
+.button-close-modal-2:hover,
+.button-close-modal-3:hover {
     opacity: 1;
 }
 
-#fade, #modal {
+#fade, #modal, 
+#fade-2, #modal-2
+#fade-3, #modal-3{
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
 }
 
-#fade {
+#fade, 
+#fade-2,
+#fade-3 {
     position: fixed;
     top: 0;
     left: 0;
@@ -359,12 +369,14 @@ main.cards2 section.card.tributario {
     z-index: 5;
 }
 
-#modal {
+#modal, 
+#modal-2,
+#modal-3 {
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 10;
     width: 500px;
     max-width: 90%;
@@ -372,7 +384,9 @@ main.cards2 section.card.tributario {
     border-radius: 0.5rem;
 }
 
-.modal-header {
+.modal-header, 
+.modal-header-2,
+.modal-header-3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -381,13 +395,19 @@ main.cards2 section.card.tributario {
     padding-bottom: 1rem;
 }
 
-.modal-body p {
+.modal-body, 
+.modal-body-2,
+.modal-body-3 p {
     margin-bottom: 1rem;
     text-align: justify;
 }
 
 #modal.hide,
-#fade.hide {
+#fade.hide,
+#modal-2.hide,
+#fade-2.hide,
+#modal-3.hide,
+#fade-3.hide {
     opacity: 0;
     pointer-events: none;
 }
