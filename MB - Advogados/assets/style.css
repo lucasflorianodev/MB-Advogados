@@ -146,8 +146,8 @@ header {
 /* Cards 1 & 2 */
 
 .area-de-atuacao {
-    height: 875px;
-    margin-top: 88px;
+    height: 920px;
+    margin-top: 90px;
 
 }
 main.cards, main.cards2 {
@@ -324,10 +324,14 @@ main.cards2 section.card.tributario {
 
 .button-close-modal, 
 .button-close-modal-2,
-.button-close-modal-3 {
+.button-close-modal-3,
+.button-close-modal-4,
+.button-close-modal-5,
+.button-close-modal-6 {
     padding: 0.6rem 1.2rem;
     background-color: #ffffff;
     color: #000000;
+    font-family: "poppins";
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
@@ -338,20 +342,29 @@ main.cards2 section.card.tributario {
 
 #open-modal, 
 #open-modal-2,
-#open-modal-3 {
+#open-modal-3,
+#open-modal-4,
+#open-modal-5,
+#open-modal-6 {
     background-color: #293842;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .button-close-modal:hover,
 .button-close-modal-2:hover,
-.button-close-modal-3:hover {
+.button-close-modal-3:hover,
+.button-close-modal-4:hover,
+.button-close-modal-5:hover,
+.button-close-modal-6:hover {
     opacity: 1;
 }
 
 #fade, #modal, 
-#fade-2, #modal-2
-#fade-3, #modal-3{
+#fade-2, #modal-2,
+#fade-3, #modal-3,
+#fade-4, #modal-4,
+#fade-5, #modal-5,
+#fade-6, #modal-6 {
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
@@ -359,7 +372,10 @@ main.cards2 section.card.tributario {
 
 #fade, 
 #fade-2,
-#fade-3 {
+#fade-3,
+#fade-4,
+#fade-5,
+#fade-6 {
     position: fixed;
     top: 0;
     left: 0;
@@ -371,7 +387,10 @@ main.cards2 section.card.tributario {
 
 #modal, 
 #modal-2,
-#modal-3 {
+#modal-3,
+#modal-4,
+#modal-5,
+#modal-6 {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -386,7 +405,10 @@ main.cards2 section.card.tributario {
 
 .modal-header, 
 .modal-header-2,
-.modal-header-3 {
+.modal-header-3,
+.modal-header-4,
+.modal-header-5,
+.modal-header-6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -397,7 +419,10 @@ main.cards2 section.card.tributario {
 
 .modal-body, 
 .modal-body-2,
-.modal-body-3 p {
+.modal-body-3,
+.modal-body-4,
+.modal-body-5,
+.modal-body-6 p {
     margin-bottom: 1rem;
     text-align: justify;
 }
@@ -407,7 +432,13 @@ main.cards2 section.card.tributario {
 #modal-2.hide,
 #fade-2.hide,
 #modal-3.hide,
-#fade-3.hide {
+#fade-3.hide,
+#modal-4.hide,
+#fade-4.hide,
+#modal-5.hide,
+#fade-5.hide,
+#modal-6.hide,
+#fade-6.hide {
     opacity: 0;
     pointer-events: none;
 }
