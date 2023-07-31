@@ -114,3 +114,70 @@ const toggleModal6 = () => {
     el.addEventListener("click", () => toggleModal6());
 })
 
+/*modal Trabalhista*/
+
+const openModalButton7 = document.querySelector("#open-modal-7");
+const closeModalButton7 = document.querySelector("#close-modal-7");
+const modal7 = document.querySelector("#modal-7");
+const fade7 = document.querySelector("#fade-7");
+
+
+const toggleModal7 = () => {
+    modal7.classList.toggle("hide");
+    fade7.classList.toggle("hide");
+};
+
+[openModalButton7, closeModalButton7, fade7].forEach((el) => {
+    el.addEventListener("click", () => toggleModal7());
+})
+
+/*modal Previdênciario*/
+
+const openModalButton8 = document.querySelector("#open-modal-8");
+const closeModalButton8 = document.querySelector("#close-modal-8");
+const modal8 = document.querySelector("#modal-8");
+const fade8 = document.querySelector("#fade-8");
+
+
+const toggleModal8 = () => {
+    modal8.classList.toggle("hide");
+    fade8.classList.toggle("hide");
+};
+
+[openModalButton8, closeModalButton8, fade8].forEach((el) => {
+    el.addEventListener("click", () => toggleModal8());
+})
+
+/*modal Miguel*/
+
+const openModalButton9 = document.querySelector("#open-modal-9");
+const closeModalButton9 = document.querySelector("#close-modal-9");
+const modal9 = document.querySelector("#modal-9");
+const fade9 = document.querySelector("#fade-9");
+
+
+const toggleModal9 = () => {
+    modal9.classList.toggle("hide");
+    fade9.classList.toggle("hide");
+};
+
+[openModalButton9, closeModalButton9, fade9].forEach((el) => {
+    el.addEventListener("click", () => toggleModal9());
+})
+
+/*modal Estela*/
+
+const openModalButton10 = document.querySelector("#open-modal-10");
+const closeModalButton10 = document.querySelector("#close-modal-10");
+const modal10 = document.querySelector("#modal-10");
+const fade10 = document.querySelector("#fade-10");
+
+
+const toggleModal10 = () => {
+    modal10.classList.toggle("hide");
+    fade10.classList.toggle("hide");
+};
+
+[openModalButton10, closeModalButton10, fade10].forEach((el) => {
+    el.addEventListener("click", () => toggleModal10());
+})

@@ -137,7 +137,7 @@ header {
 .banner.module.parallax h3 {
     color: #fff;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     z-index: 50;
     height: 100px;
     font-weight: 300;
@@ -146,7 +146,7 @@ header {
 /* Cards 1 & 2 */
 
 .area-de-atuacao {
-    height: 920px;
+    height: 900px;
     margin-top: 90px;
 
 }
@@ -161,8 +161,8 @@ main.cards section.card:first-child, main.cards2 section.card:first-child {
 }
 
 main.cards section.card .icon, main.cards2 section.card .icon {
-    width: 64px;
-    height: 64px;
+    width: 65px;
+    height: 65px;
 }
 
 main.cards section.card img, main.cards2 section.card img {
@@ -190,7 +190,7 @@ main.cards section.card, main.cards2 section.card {
     padding: 1rem 1.5rem;
     border-radius: 8px;
     max-height: 400px;
-    margin-left: 32px;
+    margin-left: 22px;
 }
 
 main.cards section.card button, main.cards2 section.card button {
@@ -225,6 +225,10 @@ main.cards section.card.penal button {
     background: #fff;
 }
 
+main.cards section.card.trabalhista button {
+    background: #fff;
+}
+
 main.cards2 section.card.imobiliario button {
     background: #fff;
 }
@@ -234,6 +238,10 @@ main.cards2 section.card.empresarial button {
 }
 
 main.cards2 section.card.tributario button {
+    background: #fff;
+}
+
+main.cards2 section.card.previdenciario button {
     background: #fff;
 }
 
@@ -249,6 +257,11 @@ main.cards section.card.penal {
     box-shadow: 20px 20px 50px -30px #222121;
 }
 
+main.cards section.card.trabalhista {
+    box-shadow: 20px 20px 50px -30px #222121;
+}
+
+
 main.cards2 section.card.imobiliario {
     box-shadow: 20px 20px 50px -30px #222121;
 }
@@ -258,6 +271,10 @@ main.cards2 section.card.empresarial {
 }
 
 main.cards2 section.card.tributario {
+    box-shadow: 20px 20px 50px -30px #222121;
+}
+
+main.cards2 section.card.previdenciario {
     box-shadow: 20px 20px 50px -30px #222121;
 }
 
@@ -327,7 +344,11 @@ main.cards2 section.card.tributario {
 .button-close-modal-3,
 .button-close-modal-4,
 .button-close-modal-5,
-.button-close-modal-6 {
+.button-close-modal-6,
+.button-close-modal-7,
+.button-close-modal-8,
+.button-close-modal-9,
+.button-close-modal-10 {
     padding: 0.6rem 1.2rem;
     background-color: #ffffff;
     color: #000000;
@@ -345,7 +366,11 @@ main.cards2 section.card.tributario {
 #open-modal-3,
 #open-modal-4,
 #open-modal-5,
-#open-modal-6 {
+#open-modal-6,
+#open-modal-7,
+#open-modal-8,
+#open-modal-9,
+#open-modal-10 {
     background-color: #293842;
     color: rgb(255, 255, 255);
 }
@@ -355,7 +380,11 @@ main.cards2 section.card.tributario {
 .button-close-modal-3:hover,
 .button-close-modal-4:hover,
 .button-close-modal-5:hover,
-.button-close-modal-6:hover {
+.button-close-modal-6:hover,
+.button-close-modal-7:hover,
+.button-close-modal-8:hover,
+.button-close-modal-9:hover,
+.button-close-modal-10:hover {
     opacity: 1;
 }
 
@@ -364,7 +393,11 @@ main.cards2 section.card.tributario {
 #fade-3, #modal-3,
 #fade-4, #modal-4,
 #fade-5, #modal-5,
-#fade-6, #modal-6 {
+#fade-6, #modal-6,
+#fade-7, #modal-7,
+#fade-8, #modal-8,
+#fade-9, #modal-9,
+#fade-10, #modal-10 {
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
@@ -375,7 +408,11 @@ main.cards2 section.card.tributario {
 #fade-3,
 #fade-4,
 #fade-5,
-#fade-6 {
+#fade-6,
+#fade-7,
+#fade-8,
+#fade-9,
+#fade-10 {
     position: fixed;
     top: 0;
     left: 0;
@@ -390,7 +427,11 @@ main.cards2 section.card.tributario {
 #modal-3,
 #modal-4,
 #modal-5,
-#modal-6 {
+#modal-6,
+#modal-7,
+#modal-8,
+#modal-9,
+#modal-10  {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -408,7 +449,11 @@ main.cards2 section.card.tributario {
 .modal-header-3,
 .modal-header-4,
 .modal-header-5,
-.modal-header-6 {
+.modal-header-6,
+.modal-header-7,
+.modal-header-8,
+.modal-header-9,
+.modal-header-10 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -422,7 +467,11 @@ main.cards2 section.card.tributario {
 .modal-body-3,
 .modal-body-4,
 .modal-body-5,
-.modal-body-6 p {
+.modal-body-6,
+.modal-body-7,
+.modal-body-8,
+.modal-body-9
+.modal-body-10 p {
     margin-bottom: 1rem;
     text-align: justify;
 }
@@ -438,8 +487,179 @@ main.cards2 section.card.tributario {
 #modal-5.hide,
 #fade-5.hide,
 #modal-6.hide,
-#fade-6.hide {
+#fade-6.hide,
+#modal-7.hide,
+#fade-7.hide,
+#modal-8.hide,
+#fade-8.hide,
+#modal-9.hide,
+#fade-9.hide,
+#modal-10.hide,
+#fade-10.hide    {
     opacity: 0;
     pointer-events: none;
 }
 
+/* Equipe */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150vh !important;
+    width: 100%;
+    margin-top: 5vh;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
+/* Apresentação equipe cards */
+
+.container {
+    display: block;
+}
+
+.container-2 {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/imgs/equipe-adv.jpg);
+}
+
+.cards-2 {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 380px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#293842, #293842);
+    transition: all .5s;
+}
+
+.cards-2:hover {
+    background-image: linear-gradient(#293842, #293842);
+}
+
+.cards-2 .img {
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.cards-2 .img span {
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.cards-2:hover .img {
+    width: 400px;
+    height: 430px;
+    opacity: 1;
+}
+
+.cards-2:hover .img span {
+    font-size: 28px;
+    text-align: justify;
+}
+
+.cards-2 .content_cards-2 {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.cards-2:hover .content_cards-2 {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cards-2 .content p {
+    margin: 0;
+}
+
+.cards-2 .content_cards-2 .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cards-2 .content_cards-2 .desc {
+    font-size: 15px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 10px;
+}
+
+.cards-2 .arrow {
+    padding: 10px;
+    transform: rotate(-180deg);
+    transition: all .5s; 
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 50
+}
+
+
+.cards-2:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 800px) {
+    main.container {
+        flex-direction: column;
+    }
+    
+    main.container section.cards-2 {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.container section.cards-2:last-child {
+        margin-bottom: 0;
+    }
+
+    main.container section.cards-2 button {
+        font-size: 70%;
+    }
+}
