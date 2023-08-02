@@ -148,36 +148,87 @@ const toggleModal8 = () => {
     el.addEventListener("click", () => toggleModal8());
 })
 
-/*modal Miguel*/
 
-const openModalButton9 = document.querySelector("#open-modal-9");
-const closeModalButton9 = document.querySelector("#close-modal-9");
-const modal9 = document.querySelector("#modal-9");
-const fade9 = document.querySelector("#fade-9");
+/*formSubmit para contato*/
 
+class FormSubmit {
+    constructor(settings) {
+      this.settings = settings;
+      this.form = document.querySelector(settings.form);
+      this.formButton = document.querySelector(settings.button);
+      if (this.form) {
+        this.url = this.form.getAttribute("action");
+      }
+      this.sendForm = this.sendForm.bind(this);
+    }
+  
+    displaySuccess() {
+      this.form.innerHTML = this.settings.success;
+    }
+  
+    displayError() {
+      this.form.innerHTML = this.settings.error;
+    }
+  
+    getFormObject() {
+      const formObject = {};
+      const fields = this.form.querySelectorAll("[name]");
+      fields.forEach((field) => {
+        formObject[field.getAttribute("name")] = field.value;
+      });
+      return formObject;
+    }
+  
+    onSubmission(event) {
+      event.preventDefault();
+      event.target.disabled = true;
+      event.target.innerText = "Enviando...";
+    }
+  
+    async sendForm(event) {
+      try {
+        this.onSubmission(event);
+        await fetch(this.url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(this.getFormObject()),
+        });
+        this.displaySuccess();
+      } catch (error) {
+        this.displayError();
+        throw new Error(error);
+      }
+    }
+  
+    init() {
+      if (this.form) this.formButton.addEventListener("click", this.sendForm);
+      return this;
+    }
+  }
+  
+  const formSubmit = new FormSubmit({
+    form: "[data-form]",
+    button: "[data-button]",
+    success: "<h1 class='success'>Mensagem enviada!</h1>",
+    error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
+  });
+  formSubmit.init();
 
-const toggleModal9 = () => {
-    modal9.classList.toggle("hide");
-    fade9.classList.toggle("hide");
-};
+  function category(c){
+    var item = document.getElementById('item-'+c).innerHTML;
+    document.getElementsByTagName('input')[0].value = item;
+  }
 
-[openModalButton9, closeModalButton9, fade9].forEach((el) => {
-    el.addEventListener("click", () => toggleModal9());
-})
+  function dropdown(p){
+    var e = document.getElementsByClassName('dropdown')[0];
+    var d = ['block','none'];
 
-/*modal Estela*/
+    e.style.display =d[p];
+    e.style.display = 'translate(0px)';
+  }
 
-const openModalButton10 = document.querySelector("#open-modal-10");
-const closeModalButton10 = document.querySelector("#close-modal-10");
-const modal10 = document.querySelector("#modal-10");
-const fade10 = document.querySelector("#fade-10");
-
-
-const toggleModal10 = () => {
-    modal10.classList.toggle("hide");
-    fade10.classList.toggle("hide");
-};
-
-[openModalButton10, closeModalButton10, fade10].forEach((el) => {
-    el.addEventListener("click", () => toggleModal10());
-})
+  
+  

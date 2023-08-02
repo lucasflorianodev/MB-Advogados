@@ -284,6 +284,8 @@
         <div class="container">
             <main class="container-2" id="equipe">
 
+                <h1 class="titulo-equipe">Conheça nossos advogados</h1>
+
                 <section class="cards-2 miguel">
  
                     <div class="icon">
@@ -294,22 +296,13 @@
                         <h1>Miguel Barbosa</h1>
                         <span>Prestamos assessoria jurídica, na esfera administrativa e judicial, visando à concessão e manutenção de benefícios previdenciários e assistenciais requeridos no INSS, bem como, em demais autarquias previdenciárias Municipal e Estadual.</span>
                     </div>
-                    <div id="open-modal-9" class="arrow">
+                    <div class="arrow">
                         <span class="material-symbols-outlined">expand_more</span>
                     </div>
-                    <div id="fade-9" class="hide"></div>
-                    <div id="modal-9" class="hide">
-                        <div class="modal-header-9">
-                            <h2>Miguel Barbosa</h2>
-                            <button id="close-modal-9" class="button-close-modal-9">Fechar</button>
-                        </div>
-    
-                        <div class="modal-body-9">
-                            <p>Prestamos assessoria jurídica, na esfera administrativa e judicial, visando à concessão e manutenção de benefícios previdenciários e assistenciais requeridos no INSS, bem como, em demais autarquias previdenciárias Municipal e Estadual.</p>
-                        </div>
-                    </div>
+
                 </section>
 
+                
                 <section class="cards-2 estela">
  
                     <div class="icon">
@@ -320,22 +313,46 @@
                         <h1>Estela Formiga</h1>
                         <span>Prestamos assessoria jurídica, na esfera administrativa e judicial, visando à concessão e manutenção de benefícios previdenciários e assistenciais requeridos no INSS, bem como, em demais autarquias previdenciárias Municipal e Estadual.</span>
                     </div>
-                    <div id="open-modal-9" class="arrow">
+                    <div class="arrow">
                         <span class="material-symbols-outlined">expand_more</span>
                     </div>
-                    <div id="fade-10" class="hide"></div>
-                    <div id="modal-10" class="hide">
-                        <div class="modal-header-10">
-                            <h2>Estela Formiga</h2>
-                            <button id="close-modal-10" class="button-close-modal-10">Fechar</button>
-                        </div>
-    
-                        <div class="modal-body-10">
-                            <p>Prestamos assessoria jurídica, na esfera administrativa e judicial, visando à concessão e manutenção de benefícios previdenciários e assistenciais requeridos no INSS, bem como, em demais autarquias previdenciárias Municipal e Estadual.</p>
-                        </div>
-                    </div>
+
                  </section>
+
             </main>
+        </div>
+
+        <div class="contato" id="contato">
+
+            <h1 class="title">Entre em contato conosco!</h1>
+            <form
+                action="https://formsubmit.co/ajax/lucasfloriano09@gmail.com"
+                method="POST"
+                data-form
+            >
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required />
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required />
+            <label for="email">Número de Telefone</label>
+            <input type="tel" name="tel" id="telefone" placeholder="Seu número" required />
+            <label for="email">Categoria:</label>
+            <input type="text" name="categoria" placeholder="selecione uma categoria" onfocus="dropdown(0)" onblur="dropdown(1)"/>
+            <div class="dropdown">
+                <div class="listdropdown">
+
+                    <div class="item" id="item-1" onmousedown="category(1)">Cível</div>
+                    <div class="item" id="item-2" onmousedown="category(2)">Trabalhista</div>
+                    <div class="item" id="item-3" onmousedown="category(3)">Previdênciario</div>
+                    <div class="item" id="item-4" onmousedown="category(4)">Imobiliário</div>
+                    <div class="item" id="item-5" onmousedown="category(5)">Tributário</div>
+                    <div class="item" id="item-6" onmousedown="category(6)">Outro...</div>
+
+                </div>
+            </div>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" required></textarea>
+            <button type="submit" data-button>Enviar</button>
         </div>
     </div>
 </body>
