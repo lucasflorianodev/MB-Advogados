@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="/imgs/miguel_barbosa-128.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>MB - Advogados</title>
 </head>
 <body>
@@ -289,7 +290,7 @@
                 <section class="cards-2 miguel">
  
                     <div class="icon">
-                        <img src="/imgs/Miguel-Barbosa.jpeg" alt="Miguel Barbosa" class="img">
+                        <img src="/imgs/miguel.jpeg" alt="Miguel Barbosa" class="img">
                     </div>
     
                     <div class="content_cards-2">
@@ -324,36 +325,121 @@
 
         <div class="contato" id="contato">
 
-            <h1 class="title">Entre em contato conosco!</h1>
-            <form
-                action="https://formsubmit.co/ajax/lucasfloriano09@gmail.com"
-                method="POST"
-                data-form
-            >
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required />
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu email" required />
-            <label for="email">Número de Telefone</label>
-            <input type="tel" name="tel" id="telefone" placeholder="Seu número" required />
-            <label for="email">Categoria:</label>
-            <input type="text" name="categoria" placeholder="selecione uma categoria" onfocus="dropdown(0)" onblur="dropdown(1)"/>
-            <div class="dropdown">
-                <div class="listdropdown">
+            <div class="container-3">
+                <div class="contact_data2">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-location-dot"></i>
+                      <strong>Location:</strong>
+                      <p>Rua Deputado Barreto Sobrinho, 263, Emp. Teófilo Gaudencio, Tambiá, João Pessoa - PB</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-envelope"></i>
+                      <strong>Email:</strong>
+                      <p>mlsbarbosa.adv@gmail.com</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-envelope"></i>
+                      <strong>Call:</strong>
+                      <p>+55 (83) 93512-0236</p>
+                    </li>
+                  </ul>
+                  <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0840108331777!2d-34.876906149213355!3d-7.116262874604021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace7fb18869013%3A0x8a29a39006eb46f4!2sR.%20Dep.%20Barreto%20Sobrinho%2C%20263%20-%20Tambi%C3%A1%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058020-680!5e0!3m2!1spt-BR!2sbr!4v1691773571576!5m2!1spt-BR!2sbr" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                  </div>
+                </div>
+                <div class="contact_data">
+                  <h2>Contact Me</h2>
+                  <form action="https://formsubmit.co/lucasfloriano09@gmail.com" method="POST">
+                    <label for="name">Name</label>
+                    <input id="GET-name" type="textarea" name="name" />
+                    <label for="email">Email</label>
+                    <input type="email" />
+                    <label for="">Subject</label>
+                    <input type="text" id="name"/>
+                    <label for="">mensagem</label>
+                    <textarea name="" id="" cols="30" rows="05"></textarea>
+                    <button>Send Message</button>
+                  </form>
+                </div>
+              </div>
+        </div>
 
-                    <div class="item" id="item-1" onmousedown="category(1)">Cível</div>
-                    <div class="item" id="item-2" onmousedown="category(2)">Trabalhista</div>
-                    <div class="item" id="item-3" onmousedown="category(3)">Previdênciario</div>
-                    <div class="item" id="item-4" onmousedown="category(4)">Imobiliário</div>
-                    <div class="item" id="item-5" onmousedown="category(5)">Tributário</div>
-                    <div class="item" id="item-6" onmousedown="category(6)">Outro...</div>
-
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <h1>Logo</h1>
+                    <p>It's all about your dreams.</p>
+    
+                    <div id="footer_social_media">
+                        <a href="#https://www.instagram.com/miguelbarbosa.adv/" class="footer-link" id="instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+    
+                        <a href="#https://wa.me/558335120236" class="footer-link" id="whatsapp" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <ul class="footer-list">
+                    <li>
+                        <h3>Blog</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Tech</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Adventures</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Music</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer-list">
+                    <li>
+                        <h3>Products</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">App</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Desktop</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Cloud</a>
+                    </li>
+                </ul>
+    
+                <div id="footer_subscribe">
+                    <h3>Subscribe</h3>
+    
+                    <p>
+                        Enter your e-mail to get notified about
+                        our news solutions
+                    </p>
+    
+                    <div id="input_group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" required></textarea>
-            <button type="submit" data-button>Enviar</button>
-        </div>
+    
+            <div id="footer_copyright">
+               &#169 developed by Lucas Floriano - All Right Reserved
+            </div>
+        </footer>
     </div>
 </body>
 <script src="/assets/script.js"></script>
