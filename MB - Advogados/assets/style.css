@@ -518,6 +518,7 @@ main.cards2 section.card.previdenciario {
     display: block;
     justify-content: space-around;
     position: absolute;
+    max-height: 1500px;
 }
 
 .titulo-equipe {
@@ -527,15 +528,15 @@ main.cards2 section.card.previdenciario {
     position: absolute;
     font-family: "poppins";
     font-weight: 900;
-    margin-bottom: 850px;
+    margin-bottom: 650px;
     color: #ffffff;
 }
 
 .container-2 {
     width: 100%;
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
-    height: 300px;
+    height: 100px;
     align-items: center;
     justify-content: center;
     background-image: url(/imgs/equipe-adv.jpg);
@@ -721,27 +722,27 @@ main.cards2 section.card.previdenciario {
 /*contatos*/
 
 .contato {
-    margin-top: 870px;
-    min-height: 70vh;
-    margin-left: 25rem;
+    margin-left: 15rem;
     border-radius: 10px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .container-3 {
-    margin-top: 110vh;
+    position: absolute;
+    margin-top: 950px;
     width: 70%;
-    height: 80vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.212);
+    overflow: hidden;
 }
 
   
 .container-3 .contact_data {
     background: #fff;
-    width: 550px;
+    width: 540px;
     border-radius: 02px;
     border-top: 04px solid #47b2e4;
     margin: 0 10px;
@@ -754,8 +755,8 @@ main.cards2 section.card.previdenciario {
 .container-3 .contact_data form input,
   textarea {
     width: 95%;
-    margin: 05px 0 0 10px;
-    padding: 07px 10px;
+    margin: 5px 0 0 10px;
+    padding: 7px 10px;
     border: 1px solid #ddd;
     font-size: 1rem;
     border-radius: 05px;
@@ -792,9 +793,9 @@ main.cards2 section.card.previdenciario {
   
 .container-3 .contact_data2 {
     background: #fff;
-    border-radius: 02px;
+    border-radius: 0.2px;
     border-top: 04px solid #3498db;
-    width: 400px;
+    width: 550px;
     margin: 0 10px;
 }
   
@@ -824,7 +825,7 @@ main.cards2 section.card.previdenciario {
 .container-3 .contact_data2 .map iframe {
     width: 100%;
     height: 350px;
-    width: 400px;
+    width: 550px;
     margin: 1rem 0rem;
 }
   
@@ -976,6 +977,12 @@ footer {
     color: var(--color-neutral-40);
 }
 
+.footer {
+    position: absolute;
+    max-height: 500px;
+    margin-top: 1650px;
+}
+
 .footer-link {
     text-decoration: none;
 }
@@ -1047,14 +1054,27 @@ footer {
 }
 
 #footer_subscribe p {
-    color: var(--color-neutral-30);
+    color: var(--color-neutral-40);
 }
 
 #input_group {
     display: flex;
     align-items: center;
-    background-color: var(--color-neutral-0);
+    background-color: var(--color-neutral-40);
     border-radius: 4px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
 }
 
 #input_group input {
