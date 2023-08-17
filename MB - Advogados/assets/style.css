@@ -730,9 +730,9 @@ main.cards2 section.card.previdenciario {
 
 .container-3 {
     position: absolute;
-    margin-top: 950px;
+    margin-top: 930px;
     width: 70%;
-    height: 65vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.212);
@@ -742,7 +742,7 @@ main.cards2 section.card.previdenciario {
   
 .container-3 .contact_data {
     background: #fff;
-    width: 540px;
+    width: 550px;
     border-radius: 02px;
     border-top: 04px solid #47b2e4;
     margin: 0 10px;
@@ -983,6 +983,11 @@ footer {
     margin-top: 1650px;
 }
 
+.logo-footer {
+    max-width: 100px;
+    max-height: 200px;
+}
+
 .footer-link {
     text-decoration: none;
 }
@@ -1119,5 +1124,7 @@ footer {
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
+        position: absolute;
+        margin-top: 1200px;
     }
 }
