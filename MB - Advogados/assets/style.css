@@ -32,7 +32,6 @@ main {
 nav, ul, li {
     list-style-type: none;
     gap: 2rem;
-    
 }
 header {
     background-color: #1c1f40;
@@ -146,6 +145,69 @@ header {
     z-index: 50;
     height: 100px;
     font-weight: 300;
+}
+
+.button-consulta {
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins";
+    z-index: 100;
+    max-width: 400px;
+    margin-left: 45rem;
+    box-shadow:inset 0px -3px 7px 0px #1c1f40;
+	background:linear-gradient(to bottom, #1c1f40 5%, #1c1f40 100%);
+	background-color:#1c1f40;
+	border-radius: 5px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #fcfcfc00;
+}
+
+.button-consulta:hover {
+    background:linear-gradient(to bottom, #10122e 15%, #181c47 100%);
+	background-color:#0688fa;
+}
+
+.button-consulta:active {
+	position:relative;
+	top:2px;
+}
+
+.consulta-a {
+    list-style-type: none;
+    text-decoration: none;
+    height: 20px;
+    width: 550px;
+    color: white;
+    transition: all 0.4s;
+}
+
+.consulta-a:hover {
+    color: var(--color-neutral-10);
+}
+
+@media screen and (max-width: 768px) {
+    .button-consulta {
+        display: flex;
+        position: absolute;
+        right: 180px;
+        top: 800px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .button-consulta {
+        display: flex;
+        position: absolute;
+        right: 180px;
+        top: 800px;
+    }
 }
 
 /* Cards 1 & 2 */
@@ -519,6 +581,7 @@ main.cards2 section.card.previdenciario {
     justify-content: space-around;
     position: absolute;
     max-height: 1500px;
+    width: 100%;
 }
 
 .titulo-equipe {
@@ -534,7 +597,7 @@ main.cards2 section.card.previdenciario {
 
 .container-2 {
     width: 100%;
-    min-height: 85vh;
+    min-height: 90vh;
     display: flex;
     height: 100px;
     align-items: center;
@@ -605,7 +668,7 @@ main.cards2 section.card.previdenciario {
 }
 
 .cards-2 .content_cards-2 {
-    padding: 0px 25px;
+    padding: 0px 10px;
     height: 0;
     opacity: 0;
     transition: all .5s;
@@ -616,8 +679,8 @@ main.cards2 section.card.previdenciario {
 }
 
 .cards-2:hover .content_cards-2 {
-    height: 260px;
-    padding: 20px;
+    height: 300px;
+    padding: 6px;
     opacity: 1;
     transform: translateY(0);
 }
@@ -627,12 +690,12 @@ main.cards2 section.card.previdenciario {
 }
 
 .cards-2 .content_cards-2 .title {
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 600;
 }
 
 .cards-2 .content_cards-2 .desc {
-    font-size: 30px;
+    font-size: 10px;
     font-weight: 100;
     opacity: .8;
     margin-top: 5px;
@@ -658,13 +721,13 @@ main.cards2 section.card.previdenciario {
 }
 
 .card .arrow span {
-    font-size: 24px;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 1000px) {
 
     div.container {
-        margin-top: 10vh;
+        margin-top: 20vh;
         height: 600px;
         width: 57rem;
     }
@@ -690,12 +753,15 @@ main.cards2 section.card.previdenciario {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
     div.container {
-        margin-top: 230vh;
+        margin-top: 280vh;
         height: 600px;
-        width: 47.5rem;
+        width: 28rem;
+        display: flex;
+        justify-content: column;
+
     }
 
     main.container-2 {
@@ -706,7 +772,7 @@ main.cards2 section.card.previdenciario {
     }
 
     .titulo-equipe {
-        margin-bottom: 1300px;
+        margin-bottom: 1150px;
     }
     
     main.container-2 section.cards-2 {
@@ -731,8 +797,9 @@ main.cards2 section.card.previdenciario {
 .container-3 {
     position: absolute;
     margin-top: 930px;
-    width: 70%;
-    height: 70vh;
+    margin-left: 55px;
+    width: 65%;
+    height: 90vh;
     display: flex;
     justify-content: center;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.212);
@@ -824,15 +891,39 @@ main.cards2 section.card.previdenciario {
   
 .container-3 .contact_data2 .map iframe {
     width: 100%;
-    height: 350px;
+    height: 550px;
     width: 550px;
     margin: 1rem 0rem;
 }
   
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    width: 540px;
+    margin-top: 0.40rem;
+    padding: 0 .8rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
 @media (max-width: 1037px) {
     .container-3 .contact_data,
     .contact_data2 {
-      width: 80%;
+      width: 50%;
       margin: 10px 0px;
     }
     .container-3 .contact_data h2 {
@@ -841,13 +932,16 @@ main.cards2 section.card.previdenciario {
 }
   
 @media (max-width: 768px) {
+
+    
     .container-3 .contact_data2 {
-      width: 75%;
+      width: 95%;
       margin: 10px 0px;
     }
     .container-3 .contact_data h2 {
-      width: 50%;
+      width: 60%;
     }
+
 }
 
 @media screen and (max-width: 1330px) {
@@ -869,7 +963,7 @@ main.cards2 section.card.previdenciario {
     }
 }
 
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 1300px) {
     .container-3 {
         width: 100%;
         height: auto;
@@ -980,12 +1074,11 @@ footer {
 .footer {
     position: absolute;
     max-height: 500px;
-    margin-top: 1650px;
+    margin-top: 1850px;
 }
 
 .logo-footer {
-    max-width: 100px;
-    max-height: 200px;
+    max-width: 380px;
 }
 
 .footer-link {
@@ -996,7 +1089,7 @@ footer {
     background-color: var(--color-neutral-10);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
+    padding: 3rem 4.5rem;
 }
 
 #footer_contacts h1 {
@@ -1066,7 +1159,8 @@ footer {
     display: flex;
     align-items: center;
     background-color: var(--color-neutral-40);
-    border-radius: 4px;
+    border-radius: 5px;
+    color: black;
 }
 
 .input-group {
@@ -1075,6 +1169,7 @@ footer {
     justify-content: space-between;
     padding: 1rem 0;
 }
+
 
 .input-box {
     display: flex;
@@ -1113,10 +1208,19 @@ footer {
     font-weight: 100;
 }
 
+@media screen and (max-width: 1300px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 900px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+        margin-top: 3200px;
     }
 }
 
@@ -1125,6 +1229,6 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
         position: absolute;
-        margin-top: 1200px;
+        margin-top: 3200px;
     }
 }

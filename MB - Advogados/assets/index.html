@@ -19,8 +19,8 @@
         
                 <nav class="nav-bar">
 
-                    <div class="logo"><a href="index.html">
-                        <a href=""><img class="logo" src="/imgs/logo-miguel.jpeg" alt="logo"></a>
+                    <div class="logo">
+                        <a href="/assets/index.html"><img class="logo" src="/imgs/logo-miguel.jpeg" alt="logo"></a>
                     </div>
 
                     <div class="nav-list">
@@ -29,7 +29,7 @@
                             <li class="nav-item"><a class="nav-link" href="#area-de-atuacao">Área de Atuação</a></li>
                             <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#nossos-artigos">Nossos Artigos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/assets/pag2.html">Nossos Artigos</a></li>
                         </ul>
                     </div>
 
@@ -47,7 +47,7 @@
                         <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                         <li class="nav-item"><a class="nav-link" href="#area-de-atuacao">Área de Atuação</a></li>
                         <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#nossos-artigos">Nossos Artigos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/assets/pag2.html">Nossos Artigos</a></li>
                     </ul>
 
                 </div>
@@ -58,10 +58,11 @@
                 
                 <h1 class="titulo">MB Advogados Associados</h1>
                 <h3 class="subtitulo">Advocacia com transparência e compromisso</h3>
+                <button class="button-consulta"> 
+                    <a href="https://wa.me/558335120236" target="_blank" class="consulta-a">Agende sua consulta!</a>
+                </button>
 
             </section>
-            
-        
         </main>
 
         <div class="area-de-atuacao" id="area-de-atuacao">
@@ -295,7 +296,7 @@
     
                     <div class="content_cards-2">
                         <h1>Miguel Barbosa</h1>
-                        <span>Especialista em Direito Digital e Cibernético na localização de Pessoas através de programas específicos, perfilamento e poucas informações levantadas.</span>
+                        <span>Dr. Miguel Lucas Souza Barbosa, Advogado inscrito sob a OAB/PB de nº 26.458 Formado pelo Centro Universitário de João Pessoa, como bolsista, com pautas de atuação em Direito Empresarial, Tributário e Previdenciário. Preza pela Advocacia Transparente, clara e voltada a necessidade de cada cliente de maneira individual.</span>
                     </div>
                     <div class="arrow">
                         <span class="material-symbols-outlined">expand_more</span>
@@ -312,7 +313,7 @@
     
                     <div class="content_cards-2">
                         <h1>Estela Formiga</h1>
-                        <span>Prestamos assessoria jurídica, na esfera administrativa e judicial, visando à concessão e manutenção de benefícios previdenciários e assistenciais requeridos no INSS, bem como, em demais autarquias previdenciárias Municipal e Estadual.</span>
+                        <span>Dra. Maria Estela Formiga F. Neta advogada inscrita sob a OAB/PB de nº 30.726 formada pela Faculdade Internacional da Paraíba, como bolsista atuante em Direito Trabalhista, Familiar e Cível Prezando sempre pelo respeito e trabalho justo, igualdade de gênero e empatia.</span>
                     </div>
                     <div class="arrow">
                         <span class="material-symbols-outlined">expand_more</span>
@@ -341,7 +342,7 @@
                     <li>
                       <i class="fa-solid fa-envelope"></i>
                       <strong>Contato:</strong>
-                      <p>+55 (83) 93512-0236</p>
+                      <p>+55 (83) 3512-0236</p>
                     </li>
                   </ul>
                   <div class="map">
@@ -361,18 +362,45 @@
                     
                     <div class="input-box">
                         <label for="name">Nome</label>
-                        <input id="name" type="text" name="name" placeholder="Digite seu nome" required>
+                        <input id="name" type="text" name="name" placeholder="Digite seu nome completo" required>
                     </div>
-                    
+                
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" placeholder="Digite seu email" required>
+                        <input id="id" type="email" name="email" placeholder="Digite seu email" required>
                     </div>
                     
+                    <label for="">Telefone</label>
+                    <input id="telefone" type="text" name="telefone" placeholder="Digite seu número de telefone" required>
                     <label for="">Área de atuação</label>
-                    <input type="text" id="name"  placeholder="Informe seu problema" required>
+                    <input id="area-de-atuacao" type="text" name="area-de-atuacao"  placeholder="Informe seu problema" required>
+                    
+                    <div class="gender-input">    
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input id="female" type="radio" name="radio">
+                                <label for="female">Feminino</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="male" type="radio" name="radio">
+                                <label for="male">Masculino</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="others" type="radio" name="radio">
+                                <label for="others">Outros</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="none" type="radio" name="radio">
+                                <label for="none">não dizer</label>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <label for="">mensagem</label>
-                    <textarea name="" id="" cols="30" rows="05" placeholder="Algo mais a nos informar?"></textarea>
+                    <textarea name="message" id="message" type="textarea" cols="30" rows="05" placeholder="Algo mais a nos informar?"></textarea>
                     <button>Enviar Mensagem</button>
                   </form>
                 </div>
@@ -382,13 +410,13 @@
         <footer class="footer">
             <div id="footer_content" class="grid gap-3">
                 <div id="footer_contacts">
-                    <img src="/imgs/logo-miguel.jpeg" class="logo-footer"></img>
+                    <img src="/imgs/Miguel-Footer.png" class="logo-footer"></img>
                     <div id="footer_social_media">
-                        <a href="#https://www.instagram.com/mlsbarbosa/" class="footer-link" id="instagram">
+                        <a href="https://www.instagram.com/mlsbarbosa/" class="footer-link" id="instagram" target="_blank">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
     
-                        <a href="#https://wa.me/558335120236" class="footer-link" id="whatsapp">
+                        <a href="https://wa.me/558335120236" class="footer-link" id="whatsapp">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
@@ -402,7 +430,7 @@
                         <a href="#" class="footer-link">Nossos Artigos</a>
                     </li>
                     <li>
-                        <a href="#http://lattes.cnpq.br/4766035676821199" class="footer-link" target="_blank">Lattes - Miguel</a>
+                        <a href="http://lattes.cnpq.br/4766035676821199" class="footer-link" target="_blank">Lattes - Miguel</a>
                     </li>
                     <li>
                         <a href="#" class="footer-link"></a>
@@ -428,14 +456,17 @@
                     <h3>Subscribe</h3>
     
                     <p>
-                        Digite seu e-mail para ser avisado sobre
+                        Digite seu telefone para ser avisado sobre
                         nossas soluções de notícias
                     </p>
     
                     <div id="input_group">
-                        <input type="email" id="email">
+                        <input type="tel" id="email">
                         <button>
-                            <i class="fa-regular fa-envelope"></i>
+                            <i class="fa-regular fa-envelope" >
+                                <form action="https://formsubmit.co/lucasfloriano09@gmail.com" method="POST">
+                                </form>
+                        </i>
                         </button>
                     </div>
                 </div>
