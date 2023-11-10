@@ -196,8 +196,22 @@ header {
     .button-consulta {
         display: flex;
         position: absolute;
-        right: 180px;
-        top: 800px;
+        right: 90px;
+        top: 400px;
+    }
+
+    .banner.module.parallax h1 {
+        max-width: 1000px;
+        position: absolute;
+        top: 300px;
+        font-size: 50px;
+    }
+
+    .banner.module.parallax h3 {
+        max-width: 1000px;
+        position: absolute;
+        top: 550px;
+        font-size: 20px;
     }
 }
 
@@ -205,8 +219,24 @@ header {
     .button-consulta {
         display: flex;
         position: absolute;
-        right: 180px;
-        top: 800px;
+        right: 20px;
+        top: 560px;
+        font-size: 17px;
+        width: 350px;
+    }
+
+    .banner.module.parallax h1 {
+        max-width: 1000px;
+        position: absolute;
+        top: 300px;
+        font-size: 45px;
+    }
+
+    .banner.module.parallax h3 {
+        max-width: 1000px;
+        position: absolute;
+        top: 460px;
+        font-size: 20px;
     }
 }
 
@@ -393,7 +423,7 @@ main.cards2 section.card.previdenciario {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 22px;
     position: relative;
 }
 
@@ -421,10 +451,10 @@ main.cards2 section.card.previdenciario {
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.9;
     font-size: 1rem;
     transition: 0.4s;
-    max-width: 100px;
+    max-width: 90px;
 }
 
 #open-modal, 
@@ -558,6 +588,23 @@ main.cards2 section.card.previdenciario {
 #fade-8.hide   {
     opacity: 0;
     pointer-events: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    #modal, 
+    #modal-2,
+    #modal-3,
+    #modal-4,
+    #modal-5,
+    #modal-6,
+    #modal-7,
+    #modal-8 {
+        position: fixed;
+        left: 44.5%;
+        max-width: 82%;
+    }
+
 }
 
 /* Equipe */
@@ -724,23 +771,30 @@ main.cards2 section.card.previdenciario {
     font-size: 25px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1330px) {
 
     div.container {
         margin-top: 20vh;
-        height: 600px;
-        width: 57rem;
+        height: 1000px;
+        width: 87rem;
     }
 
     main.container-2 {
         display: flex;
         flex-direction: column;
-        height: 150vh;
+        height: 120vh;
         min-height: 100vh;
     }
 
     .titulo-equipe {
         margin-bottom: 1300px;
+        font-size: 22px;
+        left: 28px;
+    }
+
+    .content_cards-2 {
+        max-height: 50%;
+        width: 100%;
     }
     
     main.container-2 section.cards-2 {
@@ -758,7 +812,7 @@ main.cards2 section.card.previdenciario {
     div.container {
         margin-top: 280vh;
         height: 600px;
-        width: 28rem;
+        width: 24rem;
         display: flex;
         justify-content: column;
 
@@ -769,6 +823,10 @@ main.cards2 section.card.previdenciario {
         flex-direction: column;
         height: 150vh;
         min-height: 90vh;
+    }
+
+    .cards-2 {
+        font-size: 13.7px;
     }
 
     .titulo-equipe {
@@ -935,7 +993,7 @@ main.cards2 section.card.previdenciario {
 
     
     .container-3 .contact_data2 {
-      width: 95%;
+      width: 65%;
       margin: 10px 0px;
     }
     .container-3 .contact_data h2 {
@@ -948,8 +1006,8 @@ main.cards2 section.card.previdenciario {
     .container-3 {
         width: 100%;
         height: auto;
-        margin-top: 1320px;
-        margin-left: -10rem;
+        top: 310%;
+        left: 200px;
     }
     
     .form-image {
@@ -967,8 +1025,6 @@ main.cards2 section.card.previdenciario {
     .container-3 {
         width: 100%;
         height: auto;
-        margin-top: 1620px;
-        margin-left: -10rem;
     }
 
     .input-h1 {
@@ -1066,15 +1122,12 @@ main.cards2 section.card.previdenciario {
 }
 
 
-footer {
-    width: 100%;
-    color: var(--color-neutral-40);
-}
 
 .footer {
     position: absolute;
     max-height: 500px;
     margin-top: 1850px;
+    color: var(--color-neutral-40);
 }
 
 .logo-footer {
@@ -1208,21 +1261,20 @@ footer {
     font-weight: 100;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1330px) {
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         margin-top: 900px;
     }
-}
 
-@media screen and (max-width: 768px) {
-    #footer_content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        margin-top: 3200px;
+    .footer {
+        width: 1rem;
     }
 }
+
+
+
 
 @media screen and (max-width: 426px) {
     #footer_content {
@@ -1230,5 +1282,10 @@ footer {
         padding: 3rem 2rem;
         position: absolute;
         margin-top: 3200px;
+    }
+
+    .footer {
+        width: 20rem;
+        top: 210%;
     }
 }
