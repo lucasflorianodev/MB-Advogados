@@ -100,12 +100,16 @@ header
 	display:none
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 	.nav-bar
 	{
 		padding:1.5rem 4rem
 	}
 	
+	.wrapper {
+		width: 106%;
+	}
+
 	.nav-item
 	{
 		display:none
@@ -458,7 +462,7 @@ main.cards2 section.card.previdenciario
 	box-shadow:20px 20px 50px -30px #222121
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 	main.cards
 	{
 		flex-direction:column
@@ -616,7 +620,7 @@ main.cards2 section.card.previdenciario
 	pointer-events:none
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 	#modal,#modal-2,#modal-3,#modal-4,#modal-5,#modal-6,#modal-7,#modal-8
 	{
 		position:fixed;
@@ -824,24 +828,24 @@ main.cards2 section.card.previdenciario
 	{
 		margin-bottom:1200px;
 		font-size:22px;
-		left:28px
+		left:28px;
 	}
 	
 	.content_cards-2
 	{
 		max-height:50%;
-		width:100%
+		width:100%;
 	}
 	
 	main.container-2 section.cards-2
 	{
 		margin-left:0;
-		margin-bottom:30px
+		margin-bottom:30px;
 	}
 	
 	main.container-2 section.cards-2:last-child
 	{
-		margin-bottom:0
+		margin-bottom:0;
 	}
 }
 
@@ -850,7 +854,7 @@ main.cards2 section.card.previdenciario
 	{
 		margin-top:260vh;
 		height:600px;
-		width:25.66rem;
+		width:26.66rem;
 		display:flex;
 		justify-content:column
 	}
@@ -861,25 +865,25 @@ main.cards2 section.card.previdenciario
 		flex-direction:column;
 		height:150vh;
 		min-height:100vh;
-		width:25.7rem
+		width:27rem;
 	}
 	
 	.cards-2
 	{
 		font-size:13.7px;
-		max-height:55%
+		max-height:55%;
 	}
 	
 	.titulo-equipe
 	{
 		margin-bottom:1200px;
-		left:35px
+		left:35px;
 	}
 	
 	main.container-2 section.cards-2
 	{
 		margin-left:0;
-		margin-bottom:30px
+		margin-bottom:30px;
 	}
 	
 	main.container-2 section.cards-2:last-child
@@ -892,9 +896,13 @@ main.cards2 section.card.previdenciario
 	main.container-2
 	{
 		width:395px;
-		width:24.29rem
+		width:25.29rem;
 	}
 	
+	.titulo-equipe {
+		margin-top: 3rem;
+	}
+
 	div.container
 	{
 		max-height:160rem;
@@ -1265,7 +1273,7 @@ main.cards2 section.card.previdenciario
 @media screen and (max-width: 426px) {
 	.container-3
 	{
-		width:90%;
+		width:92%;
 		height:auto;
 		margin-top:3075px;
 		margin-left:-11rem;
@@ -1310,14 +1318,14 @@ main.cards2 section.card.previdenciario
 		margin:.5rem;
 		justify-content:flex-end;
 		flex-direction:row;
-		margin-right:-8px
+		margin-right:-8px;
 	}
 	
 	.contact_data2
 	{
 		display:flex;
 		flex-direction:column;
-		justify-content:center
+		justify-content:center;
 	}
 	
 	.container-3 .contact_data2
@@ -1326,23 +1334,23 @@ main.cards2 section.card.previdenciario
 		border-radius:.3px;
 		border-top:4px solid #3498db;
 		width:337px;
-		margin:10px 7px
+		margin:10px 7px;
 	}
 	
 	.container-3 .contact_data2 ul
 	{
-		list-style:none
+		list-style:none;
 	}
 	
 	.container-3 .contact_data2 ul li
 	{
-		margin:.9rem 1rem
+		margin:.9rem 1rem;
 	}
 	
 	.container-3 .contact_data2 ul li i
 	{
 		font-size:1.5rem;
-		color:#47b2e4
+		color:#47b2e4;
 	}
 	
 	.container-3 .contact_data2 ul li strong
@@ -1666,7 +1674,7 @@ main.cards2 section.card.previdenciario
 		padding:3rem;
 		position:absolute;
 		margin-top:3600px;
-		width:24.35rem
+		width:24.85rem;
 	}
 	
 	.footer
