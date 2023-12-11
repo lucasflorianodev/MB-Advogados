@@ -281,17 +281,17 @@ header
 	{
 		display:flex;
 		position:absolute;
-		right:35px;
-		top:450px;
-		font-size:16px;
-		width:320px
+		right:38px;
+		top:480px;
+		font-size:16.5px;
+		width:360px
 	}
 	
 	.banner.module.parallax h1
 	{
 		max-width:1000px;
 		position:absolute;
-		top:220px;
+		top:250px;
 		font-size:45px
 	}
 	
@@ -299,7 +299,7 @@ header
 	{
 		max-width:1000px;
 		position:absolute;
-		top:360px;
+		top:390px;
 		font-size:20px
 	}
 }
@@ -895,8 +895,7 @@ main.cards2 section.card.previdenciario
 @media screen and (max-width: 426px) {
 	main.container-2
 	{
-		width:395px;
-		width:25.29rem;
+		width:27rem;
 	}
 	
 	.titulo-equipe {
@@ -907,7 +906,7 @@ main.cards2 section.card.previdenciario
 	{
 		max-height:160rem;
 		max-width:100vh;
-		margin-top:145rem
+		margin-top:145rem;
 	}
 	
 	.cards-2
@@ -915,7 +914,7 @@ main.cards2 section.card.previdenciario
 		border-radius:10px;
 		box-shadow:rgba(0,0,0,0.35) 0 5px 15px;
 		cursor:pointer;
-		width:300px;
+		width:320px;
 		margin:2px;
 		gap:5px;
 		display:flex;
@@ -928,6 +927,11 @@ main.cards2 section.card.previdenciario
 		transition:all .3s;
 		text-align:justify;
 		color:#fff
+	}
+
+	.titulo-equipe{
+		top: 0.4rem;
+		margin-left: 20px;
 	}
 }
 
@@ -1273,10 +1277,10 @@ main.cards2 section.card.previdenciario
 @media screen and (max-width: 426px) {
 	.container-3
 	{
-		width:92%;
+		width:95%;
 		height:auto;
 		margin-top:3075px;
-		margin-left:-11rem;
+		margin-left:-10.5rem;
 		justify-items:center;
 		flex-direction:column
 	}
@@ -1356,21 +1360,21 @@ main.cards2 section.card.previdenciario
 	.container-3 .contact_data2 ul li strong
 	{
 		margin-left:15px;
-		font-size:1.3rem
+		font-size:1.3rem;
 	}
 	
 	.container-3 .contact_data2 ul li p
 	{
 		font-size:14px;
-		margin-left:38px
+		margin-left:38px;
 	}
 	
 	.container-3 .contact_data2 .map iframe
 	{
 		width:70%;
 		height:355px;
-		width:325px;
-		margin:.2rem .4rem
+		width:362px;
+		margin:.2rem .4rem;
 	}
 	
 	.gender-group
@@ -1417,8 +1421,8 @@ main.cards2 section.card.previdenciario
 	
 	.container-3 .contact_data form input,textarea
 	{
-		width:100%;
-		margin:5px 1px 0;
+		width:112%;
+		margin:5px 0px 0;
 		padding:8px 10px;
 		border:1px solid #ddd;
 		font-size:1rem;
@@ -1427,7 +1431,7 @@ main.cards2 section.card.previdenciario
 	
 	.container-3 .contact_data h2
 	{
-		margin:1.5rem;
+		margin:1.9rem;
 		border-bottom:.3rem #47b2e4 solid;
 		width:50%
 	}
@@ -1441,8 +1445,8 @@ main.cards2 section.card.previdenciario
 	
 	.container-3 .contact_data button
 	{
-		margin:15px 35px;
-		width:15rem;
+		margin:15px 32px;
+		width:17rem;
 		border:none;
 		padding:10px 20px;
 		background:#47b2e4;
@@ -1674,7 +1678,7 @@ main.cards2 section.card.previdenciario
 		padding:3rem;
 		position:absolute;
 		margin-top:3600px;
-		width:24.85rem;
+		width:27.2rem;
 	}
 	
 	.footer
